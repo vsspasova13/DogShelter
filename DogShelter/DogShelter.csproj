@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A24B2882-5882-4A0F-9C07-ED1972FC6F1C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>viliProekt2</RootNamespace>
+    <AssemblyName>viliProekt2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adopters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adopters.Designer.cs">
+      <DependentUpon>Adopters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees.Designer.cs">
+      <DependentUpon>Employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Puppies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Puppies.Designer.cs">
+      <DependentUpon>Puppies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shelter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shelter.Designer.cs">
+      <DependentUpon>Shelter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShelterDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShelterDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ShelterDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShelterDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ShelterDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShelterDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TableAdopt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableAdopt.Designer.cs">
+      <DependentUpon>TableAdopt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableEmp.Designer.cs">
+      <DependentUpon>TableEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablePup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablePup.Designer.cs">
+      <DependentUpon>TablePup.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Adopters.resx">
+      <DependentUpon>Adopters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees.resx">
+      <DependentUpon>Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Puppies.resx">
+      <DependentUpon>Puppies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shelter.resx">
+      <DependentUpon>Shelter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TableAdopt.resx">
+      <DependentUpon>TableAdopt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableEmp.resx">
+      <DependentUpon>TableEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablePup.resx">
+      <DependentUpon>TablePup.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\Puppies.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ShelterDataSet.xsc">
+      <DependentUpon>ShelterDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ShelterDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShelterDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ShelterDataSet.xss">
+      <DependentUpon>ShelterDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ShelterDataSet1.xsc">
+      <DependentUpon>ShelterDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ShelterDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShelterDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ShelterDataSet1.xss">
+      <DependentUpon>ShelterDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ShelterDataSet2.xsc">
+      <DependentUpon>ShelterDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ShelterDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShelterDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ShelterDataSet2.xss">
+      <DependentUpon>ShelterDataSet2.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VIER PFOTEN_2019-03-15_001-2886x1999-1920x1330.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Capture.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="happy-couple-petting-dog-100622-aba23ecfa8804ba9b88afb50ec9e7567.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMG_7252.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dog-park-petting-dog.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="3.JPG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
