@@ -7,4 +7,4 @@ This project is a Windows Forms application developed in C# for managing operati
 - **Adopters Management**: Add, update, and view adopter information.
 - **Puppies Management**: Keep track of available puppies and their details.
 - **Employee Management**: Manage shelter staff.
-- **Adoption Records**: Record and manage puppy adoptions.
+
